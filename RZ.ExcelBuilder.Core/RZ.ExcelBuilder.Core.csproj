@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<PackageId>RZ.ExcelBuilder</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Richard Zevallos</Authors>
+		<Description>Library to build Excel reports dynamically using ClosedXML.</Description>
+		<RepositoryUrl>https://github.com/rzeveloper/RZ.ExcelBuilder.git</RepositoryUrl>
+		<PackageOutputPath>../nupkg</PackageOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.105.0" />
+	</ItemGroup>
+</Project>
