@@ -7,7 +7,6 @@
 		<Description>Library to build Excel reports dynamically using ClosedXML.</Description>
 		<RepositoryUrl>https://github.com/rzeveloper/RZ.ExcelBuilder.git</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageOutputPath>../nupkg</PackageOutputPath>
 	</PropertyGroup>
 
