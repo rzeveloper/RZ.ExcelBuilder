@@ -27,11 +27,14 @@ namespace RZ.ExcelBuilder.Core
                 IXLWorksheet worksheet = workbook.Worksheets.Add(worksheetName);
                 worksheet.AddHeaders(headers);
 
-                var propertiesInformation = GetPropertiesInformation(collection[0]);
-
-                if (!IsSubset([.. propertiesInformation.Select(x => x.Name)], [.. columns.Select(x => x.PropertyName)]))
+                if (collection != null && collection.Count > 0)
                 {
-                    throw new Exception("Properties Names does not exist.");
+                    var propertiesInformation = GetPropertiesInformation(collection[0]);
+
+                    if (!IsSubset([.. propertiesInformation.Select(x => x.Name)], [.. columns.Select(x => x.PropertyName)]))
+                    {
+                        throw new Exception("Properties Names does not exist.");
+                    }
                 }
 
                 int row = 1;
